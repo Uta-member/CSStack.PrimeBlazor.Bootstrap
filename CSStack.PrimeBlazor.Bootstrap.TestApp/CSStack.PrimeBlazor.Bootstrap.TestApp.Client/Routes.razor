@@ -1,0 +1,9 @@
+﻿@using CSStack.PrimeBlazor.Bootstrap.TestApp.Client.Layout
+@* 追加 *@
+<BootstrapComponent/>
+<Router AppAssembly="typeof(Program).Assembly">
+    <Found Context="routeData">
+        <RouteView RouteData="routeData" DefaultLayout="typeof(MainLayout)"/>
+        <FocusOnNavigate RouteData="routeData" Selector="h1"/>
+    </Found>
+</Router>
