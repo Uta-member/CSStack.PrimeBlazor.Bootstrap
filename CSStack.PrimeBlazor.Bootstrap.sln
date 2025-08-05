@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35818.85 d17.13
+VisualStudioVersion = 17.13.35818.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSStack.PrimeBlazor.Bootstrap", "CSStack.PrimeBlazor.Bootstrap\CSStack.PrimeBlazor.Bootstrap.csproj", "{07F8250F-F5CE-410C-931F-517BAE23A640}"
 EndProject
@@ -10,6 +10,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSStack.PrimeBlazor.Bootstrap.TestApp", "CSStack.PrimeBlazor.Bootstrap.TestApp\CSStack.PrimeBlazor.Bootstrap.TestApp\CSStack.PrimeBlazor.Bootstrap.TestApp.csproj", "{B499D9C3-25A2-4CD4-B547-335C0E4A8843}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSStack.PrimeBlazor.Bootstrap.TestApp.Client", "CSStack.PrimeBlazor.Bootstrap.TestApp\CSStack.PrimeBlazor.Bootstrap.TestApp.Client\CSStack.PrimeBlazor.Bootstrap.TestApp.Client.csproj", "{7B19D6C5-7737-416E-820F-FEFD7716707C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ソリューション項目", "ソリューション項目", "{2022CB0F-8BAF-F49E-0C48-8EF4C96EC109}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.md = Readme.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
