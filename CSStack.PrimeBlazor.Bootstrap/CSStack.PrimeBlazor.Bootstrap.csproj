@@ -4,11 +4,12 @@
         <TargetFramework>net8.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
-        <Version>0.0.1</Version>
+        <Version>0.0.2</Version>
         <Authors>Uta Sugane</Authors>
         <Description>BlazorでBootstrapを手軽に導入するためのパッケージ。</Description>
         <PackageReadmeFile>Readme.md</PackageReadmeFile>
         <PackageIcon>CSStack.png</PackageIcon>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
     </PropertyGroup>
 
     <ItemGroup>
@@ -21,6 +22,7 @@
     </ItemGroup>
 
     <ItemGroup>
+        <PackageReference Include="CSStack.PrimeBlazor" Version="0.1.1" />
         <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.13" />
     </ItemGroup>
 
@@ -34,10 +36,6 @@
           <PackagePath>\</PackagePath>
         </None>
         <None Include="compilerconfig.json" />
-    </ItemGroup>
-
-    <ItemGroup>
-        <ProjectReference Include="..\..\CSStack.PrimeBlazor\CSStack.PrimeBlazor\CSStack.PrimeBlazor.csproj" />
     </ItemGroup>
 
     <ItemGroup>
