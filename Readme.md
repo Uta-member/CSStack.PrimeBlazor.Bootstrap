@@ -1,29 +1,48 @@
 # CSStack.PrimeBlazor.Bootstrap
-Bootstrap��Blazor�ɊȒP�ɓ������邽�߂̃p�b�P�[�W�ł��BCSS�Ȃǂ��v���W�F�N�g���ɔz�u���Ă��邽�߁A�C���^�[�l�b�g�ɐڑ����Ă��Ȃ����ł����p�\�ł��B
+
+Bootstrap を Blazor に簡単に導入するためのパッケージです。CSS などをプロジェクト内に配置しているため、インターネットに接続していない環境でも利用可能です。
 
 # GetStarted
-## �C���X�g�[��
-NuGet����C���X�g�[�����܂��B
+
+## インストール
+
+NuGet からインストールします。
+
 ```
 dotnet add package CSStack.PrimeBlazor.Bootstrap
 ```
-## �g�p���@
-`_Imports.razor`�Ɉȉ���ǉ����܂��B
+
+## 使用方法
+
+`_Imports.razor`に以下を追加します。
+
 ```razor
 @using CSStack.PrimeBlazor.Bootstrap
 ```
-## CSS�̓ǂݍ���
-`wwwroot/index.html`�܂���`Components/App.razor`�Ɉȉ���ǉ����܂��B
+
+## CSS の読み込み
+
+`wwwroot/index.html`または`Components/App.razor`に以下を追加します。
+
 ```html
-<link rel="stylesheet" href="_content/CSStack.PrimeBlazor.Bootstrap/style/standard.css"/>
+<link
+  rel="stylesheet"
+  href="_content/CSStack.PrimeBlazor.Bootstrap/style/standard.css"
+/>
 ```
-## JS�̓ǂݍ���
-`wwwroot/index.html`�܂���`Components/App.razor`�Ɉȉ���ǉ����܂��B
+
+## JS の読み込み
+
+`wwwroot/index.html`または`Components/App.razor`に以下を追加します。
+
 ```html
 <script src="_content/CSStack.PrimeBlazor.Bootstrap/js/bootstrap.bundle.min.js"></script>
 ```
-## DI�R���e�i�ɃT�[�r�X��o�^
-`Program.cs`�Ɉȉ���ǉ����܂��B
+
+## DI コンテナにサービスを登録
+
+`Program.cs`に以下を追加します。
+
 ```csharp
 builder.Services.AddPrimeBlazorBootstrap();
 ```
