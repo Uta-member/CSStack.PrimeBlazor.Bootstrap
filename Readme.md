@@ -46,3 +46,18 @@ dotnet add package CSStack.PrimeBlazor.Bootstrap
 ```csharp
 builder.Services.AddPrimeBlazorBootstrap();
 ```
+
+## Routesにサービスを拾うためのコンポーネントを追加
+`Routes.razor`に以下を追加します。もしくはLayoutのrazorなどでも問題ありません。
+
+```html
+@* 追加 *@
+<BootstrapComponent/>
+@* ここまで *@
+<Router AppAssembly="typeof(Program).Assembly">
+    <Found Context="routeData">
+        <RouteView RouteData="routeData" DefaultLayout="typeof(MainLayout)"/>
+        <FocusOnNavigate RouteData="routeData" Selector="h1"/>
+    </Found>
+</Router>
+```

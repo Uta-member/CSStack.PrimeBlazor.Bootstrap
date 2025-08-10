@@ -4,7 +4,7 @@
         <TargetFramework>net8.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
-        <Version>0.0.2</Version>
+        <Version>0.0.3</Version>
         <Authors>Uta Sugane</Authors>
         <Description>BlazorでBootstrapを手軽に導入するためのパッケージ。</Description>
         <PackageReadmeFile>Readme.md</PackageReadmeFile>
@@ -39,6 +39,12 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Content Update="Styles\package-lock.json">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </Content>
+      <Content Update="Styles\package.json">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </Content>
       <Content Update="wwwroot\js\bootstrap.bundle.js">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content>
